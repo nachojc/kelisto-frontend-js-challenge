@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    background: #F8FAFF;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+}
+h1, h3{
+    margin: 0;
+}
+#root{
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.App{
+    position: relative;
+    display: flex;
+    margin: 39px 65px auto 63px;
+}
+.product-list{
+    flex: 1 1 auto;
+    margin-right: 24px;
+    
+
+}
+.product-list h1{
+    margin-bottom: 32px;
+    line-height: 42px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+}
+.product-list .product-list-items{
+    background-color: #FFF;
+    padding: 16px 32px 32px;
+    height: 100%;
+}
+.product-list .product-item{
+    margin: 0;
+    border-bottom: 1px solid #A2A3B2;
+    margin-top: 16px;
+}
+.product-list .product-item .item-description{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.product-list .product-item .item-description h3{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+
+}
+.product-list .product-item .item-description span{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+}
+.product-list .product-item .item-event{
+    margin-bottom: 16px;
+}
+.product-list .product-item .item-event button{
+    cursor: pointer;
+    color: #009CF5;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    background: transparent;
+    border: 0;
+    padding: 0;
+}
+.basket-list{
+    flex: 0 0 272px;
+}
+.basket-list-elements{
+    padding-top: 8px;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+}
+.basket-list .basket-item{
+    padding: 0 24px;
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.basket-list .basket-item h3, .basket-list .basket-item span{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+}
+.basket-list .basket-total {
+    margin-top: 28px;
+    padding: 24px;
+    border-top: 1px solid #A2A3B2;
+}
+.basket-list .basket-total div{
+    display: flex;
+    justify-content: space-between;
+}
+.basket-list .basket-total span{
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px;
+}
+.basket-list .basket-list-next button{
+    border-radius: 4px;
+    background: #009CF5;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19px;
+    color: #FFFFFF;
+    border: 0;
+    width: 100%;
+    height: 43px;
+    margin-top: 24px;
+    cursor: pointer;
+}
+@media (max-width: 998px){
+    .App{
+        margin: 39px 48px auto 48px;
+    }
+}
+@media (max-width: 720px){
+    .App{
+        margin: 32px 16px auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .App > *{
+        width: 100%;
+    }
+    .basket-list{
+        margin-top: 32px;
+    }
+}

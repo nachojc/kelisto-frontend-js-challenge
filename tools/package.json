@@ -1,0 +1,12 @@
+{
+  "name": "server-js-challenge",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6"
+  },
+  "scripts": {
+    "start": "nodemon ./server"
+  }
+}
